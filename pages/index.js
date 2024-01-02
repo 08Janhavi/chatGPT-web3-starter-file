@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 
+//INTERNAL IMPORT
+import {useStateContext} from "../Context/index";
 const index = () => {
-  return (
-    <div>index</div>
-  )
+  //STATE MANAGEMENT VARIABLE
+  const {DAPP_NAME,listMembership} = useStateContext();
+  return <div className='icon-custom'>
+    <p>{DAPP_NAME}</p>
+    <button onClick={()=>listMembership()}>LIST MEMBERSHIP</button>
+    </div>;
 }
 
 export default index

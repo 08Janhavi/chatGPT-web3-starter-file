@@ -1,8 +1,15 @@
 import React from 'react'
 
+//INTERNAL IMPORT
+import { Chatting,Modal } from '../Components/Chat/index';
 const chat = () => {
   return (
-    <div>chat</div>
+    <div>
+      <Chatting/>
+      <Modal/>
+      {/* SCRIPT */}
+      {/* <script type='module' src='script.js'></script> */}
+    </div>
   )
 }
 
